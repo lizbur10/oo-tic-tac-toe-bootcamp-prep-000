@@ -68,6 +68,7 @@ class TicTacToe
         return index_array
       end
     end
+    return false
   end
 
   def full?
