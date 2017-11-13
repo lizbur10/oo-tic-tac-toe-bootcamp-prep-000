@@ -83,4 +83,13 @@ class TicTacToe
     won? || draw?
   end
 
+  def winner
+    if won?
+      puts "Congratulations #{@board[won?(@board)[0]]}!"
+      return @board[won?(@board)[0]]
+    else
+      puts "Cat's Game!"
+    end
+  end
+
 end
