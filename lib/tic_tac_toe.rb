@@ -64,7 +64,7 @@ class TicTacToe
       index_array.each do |index|
         combo << @board[index]
       end
-      if combo.all? { |move| move == "X" } || move == "O" }
+      if combo.all? { |move| move == "X" } || combo.all? { |move| move == "O" }
         return index_array
       end
     end
